@@ -7,19 +7,17 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-class MergeSortTest {
-
-	@Test
+public class GnomeSortTest {
+    
+    @Test
 	void prove() {
 		int[] nums = new int[] {2,3,1};
 		int[] res = new int[] {1,2,3};
-		MergeSort sort = new MergeSort();
+		GnomeSort g = new GnomeSort();
 		System.out.println();
-		sort.mergeSort(nums);
+		g.gnomeSort(nums, 3);
 		assertArrayEquals(res, nums);
 		
 		
 	}
-
 }
