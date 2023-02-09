@@ -40,7 +40,7 @@ class RadixSort {
     }
  
    
-    static void radixsort(int array[], int n)
+    void radixsort(int array[], int n)
     {
         
         int m = getMax(array, n);
